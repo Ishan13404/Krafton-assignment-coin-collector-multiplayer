@@ -225,20 +225,6 @@ Either player can select the mode to start the game.
 - Collect coins by touching them
 - Boundary prevents players from leaving the map
 
-## Demo Video Requirements
-
-When recording your demo video, show:
-1. **Two client windows side-by-side** (use split screen or record both)
-2. **Name entry** for both players
-3. Both clients connecting to the server
-4. Mode selection process
-5. **Smooth player movement** (demonstrating interpolation works despite 200ms latency)
-6. **FPS counter** showing stable 60 FPS
-7. **Ping display** showing ~400ms round-trip (200ms each way)
-8. Coin collection and score updates
-9. **Player name tags** above characters
-10. Server-authoritative behavior (coins disappear for both players simultaneously)
-11. Win condition with winner announcement (in Sprint Mode)
 
 ## Project Structure
 
@@ -294,20 +280,6 @@ The client implements entity interpolation to smooth out movement:
 - Add sound effects and music
 - Leaderboard for Endless Mode
 
-## Testing Checklist
-
-- [x] Server starts and accepts connections
-- [x] Two clients can connect simultaneously
-- [x] Mode selection works from either client
-- [x] Players move smoothly despite 200ms latency
-- [x] Coins spawn at intervals
-- [x] Collision detection works (server-authoritative)
-- [x] Scores update correctly
-- [x] Sprint Mode: Game ends when player reaches 10 coins
-- [x] Endless Mode: Game continues indefinitely
-- [x] Boundary checking prevents out-of-bounds movement
-- [x] Client disconnect handling
-- [x] Multiple game rounds work correctly
 
 ## License
 
@@ -319,4 +291,5 @@ This project is created as a technical assessment for game development position.
 
 **Built by:** Ishan Grover  
 **Roll No.:** 22B1528  
+
 **Email:** 22b1528@iitb.ac.in
